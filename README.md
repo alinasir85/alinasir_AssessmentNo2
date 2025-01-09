@@ -2,7 +2,7 @@
 
 A modern, efficient real estate investment analysis tool built with React and NestJS that provides real-time financial calculations and visualizations.
 
-![](/Users/alinasir/Desktop/fin.png)
+![](https://iili.io/2rKWQUu.png)
 
 ## Table of Contents
 - [Features](#features)
@@ -33,7 +33,6 @@ A modern, efficient real estate investment analysis tool built with React and Ne
 
 - Node.js (v18 or higher)
 - npm (v8 or higher)
-- PostgreSQL (v14 or higher)
 - Git
 
 ## Installation
@@ -58,13 +57,12 @@ npm install
 
 4. Set up environment variables:
 ```bash
-# Frontend (.env.local)
+# Frontend (.env)
 VITE_API_URL=http://localhost:3000
-VITE_API_KEY=your_api_key
 
 # Backend (.env)
-DATABASE_URL=postgresql://user:password@localhost:5432/real_estate
-JWT_SECRET=your_jwt_secret
+PORT=3000
+NODE_ENV=development
 ```
 
 ## Development
@@ -89,57 +87,12 @@ npm run dev
 - **React**: UI framework
 - **shadcn/ui**: Component library
 - **Tailwind CSS**: Utility-first CSS framework
-- **Recharts**: Data visualization
 - **Vite**: Build tool and development server
 - **TypeScript**: Type safety
-- **React Query**: Server state management
-- **Zod**: Schema validation
-- **Vitest**: Unit testing
-- **Cypress**: E2E testing
+
 
 ### Backend
 - **NestJS**: Node.js framework
-- **TypeORM**: Object-Relational Mapping
-- **PostgreSQL**: Database
-- **Jest**: Testing framework
-- **Swagger**: API documentation
-- **class-validator**: DTO validation
-- **Winston**: Logging
-
-## API Documentation
-
-The API documentation is available at `http://localhost:3000/api` when running the backend server. It includes:
-
-- Detailed endpoint descriptions
-- Request/response schemas
-- Authentication requirements
-- Example requests
-
-## Testing
-
-### Frontend Testing
-```bash
-# Unit tests
-npm run test
-
-# E2E tests
-npm run test:e2e
-
-# Coverage report
-npm run test:coverage
-```
-
-### Backend Testing
-```bash
-# Unit tests
-npm run test
-
-# E2E tests
-npm run test:e2e
-
-# Coverage report
-npm run test:coverage
-```
 
 ## Deployment
 
@@ -167,6 +120,8 @@ docker-compose build
 2. Start the containers:
 ```bash
 docker-compose up -d
+
+APP will be available at http://localhost:5173
 ```
 
 ## Performance Considerations
@@ -175,7 +130,6 @@ docker-compose up -d
 - Efficient data structures for financial calculations
 - Debounced input handling
 - Lazy loading of heavy components
-- Optimized database queries with proper indexing
 
 ## License
 
