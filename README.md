@@ -2,7 +2,7 @@
 
 A modern, efficient real estate investment analysis tool built with React and NestJS that provides real-time financial calculations and visualizations.
 
-![](/Users/alinasir/Desktop/fin.png)
+![](https://iili.io/2rKWQUu.png)
 
 ## Table of Contents
 - [Features](#features)
